@@ -2193,11 +2193,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking\\CovidTracking\\CovidTracking.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\Aman\\#1\\CovidTracking-server\\CovidTracking\\CovidTracking\\CovidTracking.csproj",
       "projectName": "CovidTracking",
-      "projectPath": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking\\CovidTracking\\CovidTracking.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\Aman\\#1\\CovidTracking-server\\CovidTracking\\CovidTracking\\CovidTracking.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking\\CovidTracking\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\Aman\\#1\\CovidTracking-server\\CovidTracking\\CovidTracking\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

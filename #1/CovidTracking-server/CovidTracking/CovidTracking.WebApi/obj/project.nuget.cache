@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q6aG0AcobgNfDCl8CFtADUvZ/LwikkJ/5a8xcxrOqS7u3nOGvp6Pf7SqnYAFaaI99cYBuP3HoIQSyHZJP/s4gw==",
+  "dgSpecHash": "PorV/zDOoJXixkSRw5MH/jgm7ZEthiIw8IFywHCMJ9l2AvLP6sB46n2sCRI5QeDVFRyPsgxWn6zIIJccxWzVJg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking\\CovidTracking.WebApi\\CovidTracking.WebApi.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\Aman\\#1\\CovidTracking-server\\CovidTracking\\CovidTracking.WebApi\\CovidTracking.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

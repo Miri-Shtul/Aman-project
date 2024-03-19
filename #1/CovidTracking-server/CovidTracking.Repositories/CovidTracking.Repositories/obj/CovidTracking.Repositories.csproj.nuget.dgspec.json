@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\CovidTracking.Repositories.csproj": {}
+    "C:\\Users\\user\\Desktop\\Aman\\#1\\CovidTracking-server\\CovidTracking.Repositories\\CovidTracking.Repositories\\CovidTracking.Repositories.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\CovidTracking.Repositories.csproj": {
+    "C:\\Users\\user\\Desktop\\Aman\\#1\\CovidTracking-server\\CovidTracking.Repositories\\CovidTracking.Repositories\\CovidTracking.Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\CovidTracking.Repositories.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Aman\\#1\\CovidTracking-server\\CovidTracking.Repositories\\CovidTracking.Repositories\\CovidTracking.Repositories.csproj",
         "projectName": "CovidTracking.Repositories",
-        "projectPath": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\CovidTracking.Repositories.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\Aman\\#1\\CovidTracking-server\\CovidTracking.Repositories\\CovidTracking.Repositories\\CovidTracking.Repositories.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Aman\\#1\\CovidTracking-server\\CovidTracking.Repositories\\CovidTracking.Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

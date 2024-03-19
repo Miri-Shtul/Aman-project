@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wb3yKzGCrnfCHPQ5mu40Z8hhBPTeIcpVSouW15A0txjgb4bPp+al7KkSNJOeZhspxWfj9UtiegZATbCLDRK4UQ==",
+  "dgSpecHash": "lftZiv0TxsIBoXTS8F6dU19B/cZKu2xGcxxGLQ+rND3UZfxN5dj0/jWyGYn91f70iKYhYI2mEUeahDQ3Qqjmvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\CovidTracking.Repositories.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\Aman\\#1\\CovidTracking-server\\CovidTracking.Repositories\\CovidTracking.Repositories\\CovidTracking.Repositories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
