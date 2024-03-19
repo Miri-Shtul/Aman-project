@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "VaSqCHtcLB9Tn9xotw4Vn/gAnVsFBjIpHfCQuWYKB9E=",
+  "Source": "CovidTracking.WebApi",
+  "BasePath": "_content/CovidTracking.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

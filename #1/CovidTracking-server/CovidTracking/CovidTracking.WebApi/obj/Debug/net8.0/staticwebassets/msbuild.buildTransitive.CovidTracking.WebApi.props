@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\CovidTracking.WebApi.props" />
+</Project>

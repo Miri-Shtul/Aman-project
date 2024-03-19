@@ -1,0 +1,6 @@
+@CovidTracking.WebApi_HostAddress = http://localhost:5279
+
+GET {{CovidTracking.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

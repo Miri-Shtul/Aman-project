@@ -1,0 +1,318 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5DCB0E-E39A-4E99-90CA-86BE60BDE4DA}|..\\CovidTracking.Services\\CovidTracking.Services.csproj|c:\\users\\user\\desktop\\covidtracking\\covidtracking.services\\services\\vaccinationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5DCB0E-E39A-4E99-90CA-86BE60BDE4DA}|..\\CovidTracking.Services\\CovidTracking.Services.csproj|c:\\users\\user\\desktop\\covidtracking\\covidtracking.services\\services\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5DCB0E-E39A-4E99-90CA-86BE60BDE4DA}|..\\CovidTracking.Services\\CovidTracking.Services.csproj|c:\\users\\user\\desktop\\covidtracking\\covidtracking.services\\services\\coviddetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5DCB0E-E39A-4E99-90CA-86BE60BDE4DA}|..\\CovidTracking.Services\\CovidTracking.Services.csproj|c:\\users\\user\\desktop\\covidtracking\\covidtracking.services\\interfaces\\ivaccinationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5DCB0E-E39A-4E99-90CA-86BE60BDE4DA}|..\\CovidTracking.Services\\CovidTracking.Services.csproj|c:\\users\\user\\desktop\\covidtracking\\covidtracking.services\\interfaces\\imemberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5DCB0E-E39A-4E99-90CA-86BE60BDE4DA}|..\\CovidTracking.Services\\CovidTracking.Services.csproj|c:\\users\\user\\desktop\\covidtracking\\covidtracking.services\\interfaces\\icoviddetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF6118AD-0895-422A-93A1-C1C29C363006}|CovidTracking.Repositories\\CovidTracking.Repositories.csproj|c:\\users\\user\\desktop\\covidtracking\\covidtracking.repositories\\covidtracking.repositories\\interfaces\\ivaccinationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF6118AD-0895-422A-93A1-C1C29C363006}|CovidTracking.Repositories\\CovidTracking.Repositories.csproj|solutionrelative:covidtracking.repositories\\interfaces\\ivaccinationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF6118AD-0895-422A-93A1-C1C29C363006}|CovidTracking.Repositories\\CovidTracking.Repositories.csproj|c:\\users\\user\\desktop\\covidtracking\\covidtracking.repositories\\covidtracking.repositories\\interfaces\\imemberrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF6118AD-0895-422A-93A1-C1C29C363006}|CovidTracking.Repositories\\CovidTracking.Repositories.csproj|solutionrelative:covidtracking.repositories\\interfaces\\imemberrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF6118AD-0895-422A-93A1-C1C29C363006}|CovidTracking.Repositories\\CovidTracking.Repositories.csproj|c:\\users\\user\\desktop\\covidtracking\\covidtracking.repositories\\covidtracking.repositories\\interfaces\\icoviddetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF6118AD-0895-422A-93A1-C1C29C363006}|CovidTracking.Repositories\\CovidTracking.Repositories.csproj|solutionrelative:covidtracking.repositories\\interfaces\\icoviddetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5DCB0E-E39A-4E99-90CA-86BE60BDE4DA}|..\\CovidTracking.Services\\CovidTracking.Services.csproj|c:\\users\\user\\desktop\\covidtracking\\covidtracking.services\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF6118AD-0895-422A-93A1-C1C29C363006}|CovidTracking.Repositories\\CovidTracking.Repositories.csproj|c:\\users\\user\\desktop\\covidtracking\\covidtracking.repositories\\covidtracking.repositories\\repositories\\vaccinationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF6118AD-0895-422A-93A1-C1C29C363006}|CovidTracking.Repositories\\CovidTracking.Repositories.csproj|solutionrelative:covidtracking.repositories\\repositories\\vaccinationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF6118AD-0895-422A-93A1-C1C29C363006}|CovidTracking.Repositories\\CovidTracking.Repositories.csproj|c:\\users\\user\\desktop\\covidtracking\\covidtracking.repositories\\covidtracking.repositories\\entities\\vaccination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF6118AD-0895-422A-93A1-C1C29C363006}|CovidTracking.Repositories\\CovidTracking.Repositories.csproj|solutionrelative:covidtracking.repositories\\entities\\vaccination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF6118AD-0895-422A-93A1-C1C29C363006}|CovidTracking.Repositories\\CovidTracking.Repositories.csproj|c:\\users\\user\\desktop\\covidtracking\\covidtracking.repositories\\covidtracking.repositories\\repositories\\coviddetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF6118AD-0895-422A-93A1-C1C29C363006}|CovidTracking.Repositories\\CovidTracking.Repositories.csproj|solutionrelative:covidtracking.repositories\\repositories\\coviddetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF6118AD-0895-422A-93A1-C1C29C363006}|CovidTracking.Repositories\\CovidTracking.Repositories.csproj|c:\\users\\user\\desktop\\covidtracking\\covidtracking.repositories\\covidtracking.repositories\\repositories\\memberrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF6118AD-0895-422A-93A1-C1C29C363006}|CovidTracking.Repositories\\CovidTracking.Repositories.csproj|solutionrelative:covidtracking.repositories\\repositories\\memberrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF6118AD-0895-422A-93A1-C1C29C363006}|CovidTracking.Repositories\\CovidTracking.Repositories.csproj|c:\\users\\user\\desktop\\covidtracking\\covidtracking.repositories\\covidtracking.repositories\\entities\\coviddetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF6118AD-0895-422A-93A1-C1C29C363006}|CovidTracking.Repositories\\CovidTracking.Repositories.csproj|solutionrelative:covidtracking.repositories\\entities\\coviddetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF6118AD-0895-422A-93A1-C1C29C363006}|CovidTracking.Repositories\\CovidTracking.Repositories.csproj|c:\\users\\user\\desktop\\covidtracking\\covidtracking.repositories\\covidtracking.repositories\\entities\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF6118AD-0895-422A-93A1-C1C29C363006}|CovidTracking.Repositories\\CovidTracking.Repositories.csproj|solutionrelative:covidtracking.repositories\\entities\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF6118AD-0895-422A-93A1-C1C29C363006}|CovidTracking.Repositories\\CovidTracking.Repositories.csproj|c:\\users\\user\\desktop\\covidtracking\\covidtracking.repositories\\covidtracking.repositories\\interfaces\\icontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF6118AD-0895-422A-93A1-C1C29C363006}|CovidTracking.Repositories\\CovidTracking.Repositories.csproj|solutionrelative:covidtracking.repositories\\interfaces\\icontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF6118AD-0895-422A-93A1-C1C29C363006}|CovidTracking.Repositories\\CovidTracking.Repositories.csproj|c:\\users\\user\\desktop\\covidtracking\\covidtracking.repositories\\covidtracking.repositories\\entities\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF6118AD-0895-422A-93A1-C1C29C363006}|CovidTracking.Repositories\\CovidTracking.Repositories.csproj|solutionrelative:covidtracking.repositories\\entities\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF6118AD-0895-422A-93A1-C1C29C363006}|CovidTracking.Repositories\\CovidTracking.Repositories.csproj|c:\\users\\user\\desktop\\covidtracking\\covidtracking.repositories\\covidtracking.repositories\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF6118AD-0895-422A-93A1-C1C29C363006}|CovidTracking.Repositories\\CovidTracking.Repositories.csproj|solutionrelative:covidtracking.repositories\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VaccinationService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Services\\Services\\VaccinationService.cs",
+              "RelativeDocumentMoniker": "..\\CovidTracking.Services\\Services\\VaccinationService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Services\\Services\\VaccinationService.cs",
+              "RelativeToolTip": "..\\CovidTracking.Services\\Services\\VaccinationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T22:30:52.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MemberService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Services\\Services\\MemberService.cs",
+              "RelativeDocumentMoniker": "..\\CovidTracking.Services\\Services\\MemberService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Services\\Services\\MemberService.cs",
+              "RelativeToolTip": "..\\CovidTracking.Services\\Services\\MemberService.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAA3wCgAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T22:30:39.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CovidDetailService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Services\\Services\\CovidDetailService.cs",
+              "RelativeDocumentMoniker": "..\\CovidTracking.Services\\Services\\CovidDetailService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Services\\Services\\CovidDetailService.cs",
+              "RelativeToolTip": "..\\CovidTracking.Services\\Services\\CovidDetailService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACgAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T22:30:20.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IVaccinationService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Services\\Interfaces\\IVaccinationService.cs",
+              "RelativeDocumentMoniker": "..\\CovidTracking.Services\\Interfaces\\IVaccinationService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Services\\Interfaces\\IVaccinationService.cs",
+              "RelativeToolTip": "..\\CovidTracking.Services\\Interfaces\\IVaccinationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T22:28:33.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IMemberService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Services\\Interfaces\\IMemberService.cs",
+              "RelativeDocumentMoniker": "..\\CovidTracking.Services\\Interfaces\\IMemberService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Services\\Interfaces\\IMemberService.cs",
+              "RelativeToolTip": "..\\CovidTracking.Services\\Interfaces\\IMemberService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T22:28:08.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ICovidDetailService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Services\\Interfaces\\ICovidDetailService.cs",
+              "RelativeDocumentMoniker": "..\\CovidTracking.Services\\Interfaces\\ICovidDetailService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Services\\Interfaces\\ICovidDetailService.cs",
+              "RelativeToolTip": "..\\CovidTracking.Services\\Interfaces\\ICovidDetailService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T22:27:45.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IMemberRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\Interfaces\\IMemberRepository.cs",
+              "RelativeDocumentMoniker": "CovidTracking.Repositories\\Interfaces\\IMemberRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\Interfaces\\IMemberRepository.cs",
+              "RelativeToolTip": "CovidTracking.Repositories\\Interfaces\\IMemberRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T21:59:26.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IVaccinationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\Interfaces\\IVaccinationRepository.cs",
+              "RelativeDocumentMoniker": "CovidTracking.Repositories\\Interfaces\\IVaccinationRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\Interfaces\\IVaccinationRepository.cs",
+              "RelativeToolTip": "CovidTracking.Repositories\\Interfaces\\IVaccinationRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T22:00:31.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ICovidDetailRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\Interfaces\\ICovidDetailRepository.cs",
+              "RelativeDocumentMoniker": "CovidTracking.Repositories\\Interfaces\\ICovidDetailRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\Interfaces\\ICovidDetailRepository.cs",
+              "RelativeToolTip": "CovidTracking.Repositories\\Interfaces\\ICovidDetailRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T22:01:22.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Services\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\CovidTracking.Services\\Class1.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Services\\Class1.cs",
+              "RelativeToolTip": "..\\CovidTracking.Services\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T22:26:34.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "VaccinationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\Repositories\\VaccinationRepository.cs",
+              "RelativeDocumentMoniker": "CovidTracking.Repositories\\Repositories\\VaccinationRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\Repositories\\VaccinationRepository.cs",
+              "RelativeToolTip": "CovidTracking.Repositories\\Repositories\\VaccinationRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T22:20:26.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CovidDetailRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\Repositories\\CovidDetailRepository.cs",
+              "RelativeDocumentMoniker": "CovidTracking.Repositories\\Repositories\\CovidDetailRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\Repositories\\CovidDetailRepository.cs",
+              "RelativeToolTip": "CovidTracking.Repositories\\Repositories\\CovidDetailRepository.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T22:15:52.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MemberRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\Repositories\\MemberRepository.cs",
+              "RelativeDocumentMoniker": "CovidTracking.Repositories\\Repositories\\MemberRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\Repositories\\MemberRepository.cs",
+              "RelativeToolTip": "CovidTracking.Repositories\\Repositories\\MemberRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T22:02:24.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Vaccination.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\Entities\\Vaccination.cs",
+              "RelativeDocumentMoniker": "CovidTracking.Repositories\\Entities\\Vaccination.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\Entities\\Vaccination.cs",
+              "RelativeToolTip": "CovidTracking.Repositories\\Entities\\Vaccination.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T21:53:02.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CovidDetail.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\Entities\\CovidDetail.cs",
+              "RelativeDocumentMoniker": "CovidTracking.Repositories\\Entities\\CovidDetail.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\Entities\\CovidDetail.cs",
+              "RelativeToolTip": "CovidTracking.Repositories\\Entities\\CovidDetail.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T21:52:29.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Member.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\Entities\\Member.cs",
+              "RelativeDocumentMoniker": "CovidTracking.Repositories\\Entities\\Member.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\Entities\\Member.cs",
+              "RelativeToolTip": "CovidTracking.Repositories\\Entities\\Member.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBMAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T21:49:38.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\Interfaces\\IContext.cs",
+              "RelativeDocumentMoniker": "CovidTracking.Repositories\\Interfaces\\IContext.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\Interfaces\\IContext.cs",
+              "RelativeToolTip": "CovidTracking.Repositories\\Interfaces\\IContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T22:07:42.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\Entities\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "CovidTracking.Repositories\\Entities\\MyDbContext.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\Entities\\MyDbContext.cs",
+              "RelativeToolTip": "CovidTracking.Repositories\\Entities\\MyDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T22:03:59.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\Class1.cs",
+              "RelativeDocumentMoniker": "CovidTracking.Repositories\\Class1.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CovidTracking\\CovidTracking.Repositories\\CovidTracking.Repositories\\Class1.cs",
+              "RelativeToolTip": "CovidTracking.Repositories\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T21:48:24.366Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
