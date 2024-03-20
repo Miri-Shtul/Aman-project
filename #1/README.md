@@ -9,7 +9,7 @@ serving as a crucial tool for health fund administrators to monitor and manage t
 ## Screen shots
 1. View Members list :
  -  ![Alt text](https://github.com/Miri-Shtul/Aman-project/blob/main/membersList.png)
-2. Vieww/Edit member details
+2. View/Edit member details
 -  ![Alt text](https://github.com/Miri-Shtul/Aman-project/blob/main/MemberEdit.png)
 3.  Add new member
 -  ![Alt text](https://github.com/Miri-Shtul/Aman-project/blob/main/AddNewMember.png)
