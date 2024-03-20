@@ -7,13 +7,14 @@ The system is built with a focus on reliability, user-friendliness, and data acc
 serving as a crucial tool for health fund administrators to monitor and manage the pandemic's impact on their members.
 
 ## Screen shots
-- View Members list : ![Alt text](https://github.com/Miri-Shtul/Aman-project/blob/main/MemberEdit.png)
-
-- Vieww/Edit member details : ![Alt text](https://github.com/Miri-Shtul/Aman-project/blob/main/MemberEdit.png)
-
-- Add new member : ![Alt text](https://github.com/Miri-Shtul/Aman-project/blob/main/AddNewMember.png)
-
-- Statistics :![Alt text](https://github.com/Miri-Shtul/Aman-project/blob/main/Statistics.png)
+1. View Members list :
+ -  ![Alt text](https://github.com/Miri-Shtul/Aman-project/blob/main/membersList.png)
+2. Vieww/Edit member details
+-  ![Alt text](https://github.com/Miri-Shtul/Aman-project/blob/main/MemberEdit.png)
+3.  Add new member
+-  ![Alt text](https://github.com/Miri-Shtul/Aman-project/blob/main/AddNewMember.png)
+4. Statistics
+-  ![Alt text](https://github.com/Miri-Shtul/Aman-project/blob/main/Statistics.png)
 
 ## Features
 * Member Management: Add, update, and delete member information, including personal details and contact information.
