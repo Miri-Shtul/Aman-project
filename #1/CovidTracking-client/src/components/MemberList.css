@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addButton {
+    align-self: flex-end;
+    margin: 20px;
+}
+
+.membersContainer {
+    width: 100%;
+    max-width: 600px;
+}
+
+.membersList {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.memberItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.memberActions {
+    display: flex;
+    align-items: center;
+}
+
+.editLink {
+    margin-right: 10px;
+    color: #2196F3;
+}   
+
+.deleteButton {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
