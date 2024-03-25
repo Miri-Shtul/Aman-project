@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CovidTracking")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b8733fb53c3d3342a933f2c16ea8ccedca50ba2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+236a8379af23f8026da7497afc0dd80adad1caba")]
 [assembly: System.Reflection.AssemblyProductAttribute("CovidTracking")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CovidTracking")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

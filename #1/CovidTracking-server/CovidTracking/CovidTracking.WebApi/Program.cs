@@ -4,6 +4,7 @@ using CovidTracking.Repositories.Interfaces;
 using CovidTracking.WebApi;
 using CovidTracking.Repositories;
 using CovidTracking.Services;
+using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors(opt => opt.AddPolicy("CorsPolicy", policy =>
@@ -30,7 +31,12 @@ app.UseCors("CorsPolicy");
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(
+        Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Images")),
+    RequestPath = "/wwwroot/Images"
+});
 
 app.MapControllers();
 

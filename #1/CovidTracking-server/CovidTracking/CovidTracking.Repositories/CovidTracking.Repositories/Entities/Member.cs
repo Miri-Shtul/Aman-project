@@ -16,6 +16,7 @@ namespace CovidTracking.Repositories.Entities
         public DateTime DateOfBirth { get; set; }
         public string Phone { get; set; }
         public string MobilePhone { get; set; }
+        public string ImagePath { get; set; }
     }
 
 }

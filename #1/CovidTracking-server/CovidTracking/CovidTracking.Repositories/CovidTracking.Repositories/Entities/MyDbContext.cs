@@ -15,7 +15,7 @@ namespace CovidTracking.Repositories.Entities
         public DbSet<CovidDetail> CovidDetails { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=CovidDetails;Trusted_Connection=True;");
+            options.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=CovidTracking;Trusted_Connection=True;");
 
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

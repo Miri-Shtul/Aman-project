@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import MemberService from '../services/memberService';
-import './MemberList.css'; // Import the CSS file
+import './MemberList.css'; 
 
 function MemberList() {
     const [members, setMembers] = useState([]);
 
     useEffect(() => {
-        MemberService.getAll().then(setMembers);
+        MemberService.getAll().then(data => {
+            setMembers(data);
+        });
     }, []);
 
     const handleDelete = async (id) => {
@@ -29,7 +31,7 @@ function MemberList() {
             <div className="membersContainer">
                 <h1>Members</h1>
                 <ul className="membersList">
-                    {members.map(member => (
+                    {members?.map(member => (
                         <li key={member.id} className="memberItem">
                             <span>{member.firstName} {member.lastName}</span>
                             <div className="memberActions">

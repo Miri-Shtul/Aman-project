@@ -10,28 +10,20 @@ function MemberForm() {
         identityNumber: '',
         phone: '',
         mobilePhone: '',
+        dateOfBirth: '', 
         address: {
             city: '',
             street: '',
             buildingNumber: ''
-        }
+        },
+        imageFile: null,
     });
     const navigate = useNavigate();
     const { memberId } = useParams();
 
-    useEffect(() => {
-        if (memberId) {
-            MemberService.getById(memberId).then(data => {
-                if (data) {
-                    const formattedData = {
-                        ...data,
-                        dateOfBirth: data.dateOfBirth ? new Date(data.dateOfBirth).toISOString().substring(0, 10) : ''
-                    };
-                    setMember(formattedData);
-                }
-            });
-        }
-    }, [memberId]);
+    const handleFileChange = (e) => {
+        setMember({ ...member, imageFile: e.target.files[0] });
+    };
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -51,13 +43,52 @@ function MemberForm() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        if (memberId) {
-            await MemberService.update(memberId, member);
-        } else {
-            await MemberService.create(member);
+        const formData = new FormData();
+
+        Object.keys(member).forEach(key => {
+            if (key === 'imageFile') {
+                formData.append(key, member[key]);
+            } else if (key === 'address') {
+                Object.keys(member.address).forEach(subKey => {
+                    formData.append(`${key}.${subKey}`, member.address[subKey]);
+                });
+            } else {
+                formData.append(key, member[key]);
+            }
+        });
+
+        try {
+            let response;
+
+            if (memberId) {
+                response = await MemberService.update(memberId, formData);
+            } else {
+                response = await MemberService.create(formData);
+            }
+            if (response.ok) {
+                navigate('/');
+            } else {
+                console.error('Submit failed:', response);
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
         }
-        navigate('/');
     };
+
+    useEffect(() => {
+        if (memberId) {
+            MemberService.getById(memberId).then(data => {
+                if (data) {
+                    setMember({
+                        ...data,
+                        dateOfBirth: data.dateOfBirth ? new Date(data.dateOfBirth).toISOString().substring(0, 10) : '',
+                        address: data.address || { city: '', street: '', buildingNumber: '' },
+                        imageFile: null // Reset photo on edit
+                    });
+                }
+            });
+        }
+    }, [memberId]);
 
     return (
         <div className="form-container">
@@ -102,7 +133,12 @@ function MemberForm() {
                 </div>
                 <div>
                     <label>Building Number:</label>
-                    <input type="text" name="buildingNumber" value={member.address.buildingNumber} onChange={handleAddressChange} />
+                    <input type="text" name="buildingNumber"
+                        value={member.address.buildingNumber} onChange={handleAddressChange} />
+                </div>
+                <div>
+                    <label>Photo:</label>
+                    <input type="file" onChange={handleFileChange} />
                 </div>
                 <button type="submit">{memberId ? 'Update' : 'Create'}</button>
             </form>
@@ -111,3 +147,4 @@ function MemberForm() {
 }
 
 export default MemberForm;
+

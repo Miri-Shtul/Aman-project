@@ -5,7 +5,7 @@ namespace CovidTracking.WebApi.Models
 {
     public class MemberModel
     {
-        public int Id { get; set; }
+        public int? Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         [IsraeliId]
@@ -20,5 +20,7 @@ namespace CovidTracking.WebApi.Models
         public string Phone { get; set; }
         [RegularExpression(@"^(\d{10})$", ErrorMessage = "Invalid Mobile Phone Format")]
         public string MobilePhone { get; set; }
+        public IFormFile ImageFile { get; set; }
+        public string? ImagePath { get; set; }
     }
 }

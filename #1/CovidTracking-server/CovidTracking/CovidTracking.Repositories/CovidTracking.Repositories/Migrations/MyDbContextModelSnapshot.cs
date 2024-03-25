@@ -33,10 +33,10 @@ namespace CovidTracking.Repositories.Migrations
                     b.Property<int>("MemberId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("PositiveResultDate")
+                    b.Property<DateTime>("RecoveryDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("RecoveryDate")
+                    b.Property<DateTime>("positiveResultDate")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -65,6 +65,10 @@ namespace CovidTracking.Repositories.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImagePath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("LastName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -74,10 +78,6 @@ namespace CovidTracking.Repositories.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Phone")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ProfilePictureUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

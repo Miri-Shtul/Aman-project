@@ -64,26 +64,34 @@ namespace CovidTracking.WebApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] MemberModel memberModel)
+        public async Task<IActionResult> Create([FromForm] MemberModel memberModel)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
-
             try
             {
+                memberModel.Id = null;
                 var member = _mapper.Map<Repositories.Entities.Member>(memberModel);
+
+                if (memberModel.ImageFile != null)
+                {
+                    var fileName = await SaveImageFileAsync(memberModel.ImageFile);
+                    member.ImagePath = fileName;
+
+                }
                 var createdMember = await _memberService.AddAsync(member);
+                createdMember.ImagePath = member.ImagePath;
                 return CreatedAtRoute("GetMemberById", new { id = createdMember.Id }, _mapper.Map<MemberModel>(createdMember));
             }
             catch (Exception ex)
             {
-                return StatusCode(500, "An error occurred while processing your request.");
+                return StatusCode(500, "An error occurred while processing your request."+ ex);
             }
         }
         [HttpPut("{id:int}")]
-        public async Task<IActionResult> Update(int id, [FromBody] MemberModel memberModel)
+        public async Task<IActionResult> Update(int id, [FromForm] MemberModel memberModel)
         {
             if (!ModelState.IsValid)
             {
@@ -104,12 +112,17 @@ namespace CovidTracking.WebApi.Controllers
                 }
 
                 _mapper.Map(memberModel, memberInDb);
+                if (memberModel.ImageFile != null)
+                {
+                    var fileName = await SaveImageFileAsync(memberModel.ImageFile);
+                    memberInDb.ImagePath = fileName;
+                }
                 await _memberService.UpdateAsync(memberInDb);
                 return NoContent();
             }
             catch (Exception ex)
             {
-                return StatusCode(500, "An error occurred while processing your request.");
+                return StatusCode(500, "An error occurred while processing your request."+ex);
             }
         }
         [HttpDelete("{id:int}")]
@@ -130,6 +143,24 @@ namespace CovidTracking.WebApi.Controllers
             {
                 return StatusCode(500, "An error occurred while processing your request.");
             }
+        }
+
+        private async Task<string> SaveImageFileAsync(IFormFile imageFile)
+        {
+            var fileName = Path.GetFileName(imageFile.FileName);
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Images", fileName);
+
+            if (!Directory.Exists(Path.GetDirectoryName(filePath)))
+            {
+                Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+            }
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await imageFile.CopyToAsync(stream);
+            }
+
+            return fileName;
         }
 
     }

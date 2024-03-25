@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CovidTracking.Repositories
-build_property.ProjectDir = C:\Users\user\Desktop\Aman\#1\CovidTracking-server\CovidTracking\CovidTracking.Repositories\CovidTracking.Repositories\
+build_property.ProjectDir = C:\Users\user1\Desktop\.NET\Aman-project\#1\CovidTracking-server\CovidTracking\CovidTracking.Repositories\CovidTracking.Repositories\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
