@@ -1,28 +1,46 @@
 const baseUrl = 'https://localhost:7022/api/vaccination';
 
 const VaccinationService = {
-  async getVaccinationsByMemberId(memberId) {
-    const response = await fetch(`${baseUrl}/by-member/${memberId}`);
-    if (response.ok) {
-      return response.json();
+  getVaccinationsByMemberId: async (memberId) => {
+    try {
+      const response = await fetch(`${baseUrl}/by-member/${memberId}`);
+      if (response.ok) {
+        return response.json();
+      }
+      throw new Error('Failed to fetch vaccinations');
+    } catch (error) {
+      console.error('VaccinationService :: getVaccinationsByMemberId :: ERROR :: ', error);
     }
-    throw new Error('Failed to fetch vaccinations');
   },
-  async update(id, vaccination){
-        const response = await fetch(`${baseUrl}/${id}`, {
-          method: 'PUT',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(vaccination),
-        });
-        return response.ok;
-  },
-  async getNotVaccinatedMembersCount() {
-    const response = await fetch(`${baseUrl}/not-vaccinated-members-count`);
-    if (response.ok) {
-      return response.json();
+
+  update: async (id, vaccination) => {
+    try {
+      const response = await fetch(`${baseUrl}/${id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(vaccination),
+      });
+      if (!response.ok) {
+        throw new Error('Failed to update vaccination');
+      }
+      return response.ok;
+    } catch (error) {
+      console.error('VaccinationService :: update :: ERROR :: ', error);
     }
-    throw new Error('Failed to fetch not vaccinated members count');
+  },
+
+  getNotVaccinatedMembersCount: async () => {
+    try {
+      const response = await fetch(`${baseUrl}/not-vaccinated-members-count`);
+      if (response.ok) {
+        return response.json();
+      }
+      throw new Error('Failed to fetch not vaccinated members count');
+    } catch (error) {
+      console.error('VaccinationService :: getNotVaccinatedMembersCount :: ERROR :: ', error);
+    }
   },
 };
 
 export default VaccinationService;
+

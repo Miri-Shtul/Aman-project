@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import MemberService from '../services/memberService';
-import VaccinationService from '../services/vaccinationService';
-import CovidDetailService from '../services/covidDetailService';
+import MemberService from '../../services/memberService';
+import VaccinationService from '../../services/vaccinationService';
+import CovidDetailService from '../../services/covidDetailService';
 import './MemberDetail.css';
 
 function MemberDetail() {
@@ -139,40 +139,48 @@ function MemberDetail() {
         <label>Building Number:</label>
         <input type="text" value={member.address.buildingNumber} onChange={(e) => handleAddressChange(e, 'buildingNumber')} />
       </div>
-      <h2>Vaccinations</h2>
-      {vaccinations.map((vaccine, index) => (
-        <div key={index}>
-          <label>Date:</label>
-          <input
-            type="date"
-            value={new Date(vaccine.receiveTime).toISOString().substring(0, 10)}
-            onChange={(e) => handleVaccinationChange(index, 'receiveTime', e.target.value)}
-          />
-          <label>Manufacturer:</label>
-          <input
-            type="text"
-            value={vaccine.manufacturer}
-            onChange={(e) => handleVaccinationChange(index, 'manufacturer', e.target.value)}
-          />
-        </div>
-      ))}
-      <h2>COVID-19 Details</h2>
-      {covidDetails.map((detail, index) => (
-        <div key={index}>
-          <label>Positive Result Date:</label>
-          <input
-            type="date"
-            value={new Date(detail.positiveResultDate).toISOString().substring(0, 10)}
-            onChange={(e) => handleCovidDetailChange(index, 'positiveResultDate', e.target.value)}
-          />
-          <label>Recovery Date:</label>
-          <input
-            type="date"
-            value={detail.recoveryDate ? new Date(detail.recoveryDate).toISOString().substring(0, 10) : ''}
-            onChange={(e) => handleCovidDetailChange(index, 'recoveryDate', e.target.value)}
-          />
-        </div>
-      ))}
+      {vaccinations?.length > 0 && (
+        <>
+          <h2>Vaccinations</h2>
+          {vaccinations.map((vaccine, index) => (
+            <div key={index}>
+              <label>Date:</label>
+              <input
+                type="date"
+                value={new Date(vaccine.receiveTime).toISOString().substring(0, 10)}
+                onChange={(e) => handleVaccinationChange(index, 'receiveTime', e.target.value)}
+              />
+              <label>Manufacturer:</label>
+              <input
+                type="text"
+                value={vaccine.manufacturer}
+                onChange={(e) => handleVaccinationChange(index, 'manufacturer', e.target.value)}
+              />
+            </div>
+          ))}
+        </>
+      )}
+      {covidDetails?.length > 0 && (
+        <>
+          <h2>COVID-19 Details</h2>
+          {covidDetails.map((detail, index) => (
+            <div key={index}>
+              <label>Positive Result Date:</label>
+              <input
+                type="date"
+                value={new Date(detail.positiveResultDate).toISOString().substring(0, 10)}
+                onChange={(e) => handleCovidDetailChange(index, 'positiveResultDate', e.target.value)}
+              />
+              <label>Recovery Date:</label>
+              <input
+                type="date"
+                value={detail.recoveryDate ? new Date(detail.recoveryDate).toISOString().substring(0, 10) : ''}
+                onChange={(e) => handleCovidDetailChange(index, 'recoveryDate', e.target.value)}
+              />
+            </div>
+          ))}
+        </>
+      )}
       <button className="save-button" onClick={handleSave}>Save Changes</button>
     </div>
   );

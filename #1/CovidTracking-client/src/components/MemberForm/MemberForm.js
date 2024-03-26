@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import MemberService from '../services/memberService';
+import MemberService from '../../services/memberService';
 import './MemberForm.css';
 
 function MemberForm() {
@@ -10,7 +10,7 @@ function MemberForm() {
         identityNumber: '',
         phone: '',
         mobilePhone: '',
-        dateOfBirth: '', 
+        dateOfBirth: '',
         address: {
             city: '',
             street: '',

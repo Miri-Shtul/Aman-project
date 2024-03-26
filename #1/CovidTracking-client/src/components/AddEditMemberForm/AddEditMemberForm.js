@@ -3,7 +3,6 @@ import MemberService from './MemberService';
 import './AddEditMemberForm.css';
 
 function AddEditMemberForm({ member, onSave }) {
-  console.log('-->me hereeeeeeeeeeee');
   const [formData, setFormData] = useState(member || {});
 
   const handleChange = (event) => {

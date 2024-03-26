@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Chart from 'chart.js/auto';
-import CovidDetailService from '../services/covidDetailService';
-import VaccinationService from '../services/vaccinationService';
-import MemberService from '../services/memberService'; 
+import CovidDetailService from '../../services/covidDetailService';
+import VaccinationService from '../../services/vaccinationService';
+import MemberService from '../../services/memberService'; 
 
 function Statistics() {
     const [dailyPatients, setDailyPatients] = useState([]);
