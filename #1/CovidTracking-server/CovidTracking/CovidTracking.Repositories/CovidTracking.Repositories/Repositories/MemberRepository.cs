@@ -23,10 +23,43 @@ namespace CovidTracking.Repositories.Repositories
             return newUser.Entity;
         }
 
+        //public async Task DeleteAsync(int id)
+        //{
+        //    _context.Members.Remove(await GetByIdAsync(id));
+        //    await _context.SaveChangesAsync();
+        //}
         public async Task DeleteAsync(int id)
         {
-            _context.Members.Remove(await GetByIdAsync(id));
-            await _context.SaveChangesAsync();
+            var member = await _context.Members
+                                       .Include(m => m.CovidDetails)
+                                       .Include(m => m.Vaccinations)
+                                       .FirstOrDefaultAsync(m => m.Id == id);
+
+            if (member == null)
+            {
+                throw new KeyNotFoundException($"Member with id {id} not found");
+            }
+
+            using (var transaction = _context.Database.BeginTransaction())
+            {
+                try
+                {
+                    // Delete related entities
+                    _context.CovidDetails.RemoveRange(member.CovidDetails);
+                    _context.Vaccinations.RemoveRange(member.Vaccinations);
+
+                    // Delete the member
+                    _context.Members.Remove(member);
+
+                    await _context.SaveChangesAsync();
+                    await transaction.CommitAsync();
+                }
+                catch (Exception ex)
+                {
+                    await transaction.RollbackAsync();
+                    throw;
+                }
+            }
         }
 
         public async Task<List<Member>> GetAllAsync()

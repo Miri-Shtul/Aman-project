@@ -1,7 +1,18 @@
 .container {
     display: flex;
     flex-direction: column;
+    height: 100vh;
+}
+
+.topBar {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 10px;
+}
+
+.filterInput {
+    margin-left: auto;
 }
 
 .addButton {
@@ -15,6 +26,7 @@
 }
 
 .membersList {
+    margin-top: 20px;
     list-style-type: none;
     padding-left: 0;
 }
@@ -36,7 +48,7 @@
 .editLink {
     margin-right: 10px;
     color: #2196F3;
-}   
+}
 
 .deleteButton {
     background-color: #f44336;

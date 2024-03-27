@@ -12,7 +12,7 @@ namespace CovidTracking.Repositories.Entities
         public int Id { get; set; }
         [ForeignKey("MemberId")]
         public int MemberId { get; set; }
-        public Member Member { get; set; } // Navigation Property
+        public Member Member { get; set; }
         public DateTime ReciveTime { get; set; }
         public string Manufacturer { get; set; }
     }

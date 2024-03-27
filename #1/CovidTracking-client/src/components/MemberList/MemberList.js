@@ -1,37 +1,53 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import MemberService from '../../services/memberService';
-import './MemberList.css'; 
+import './MemberList.css';
+import { useSelector, useDispatch } from "react-redux";
+import { setMembers } from '../../redux/actions/actions';
 
 function MemberList() {
-    const [members, setMembers] = useState([]);
+    const dispatch = useDispatch()
+    const members = useSelector(state => state.members);
+    const [filteredMembers, setFilteredMembers] = useState(members);
 
+    const filter = (value) => {
+        if (value) {
+            const filteredMembersArray = members.filter(member =>
+                member.firstName.toLowerCase().includes(value.toLowerCase())
+                || member.lastName.toLowerCase().includes(value.toLowerCase()));
+            setFilteredMembers(filteredMembersArray);
+        } else {
+            setFilteredMembers(members);
+        }
+    };
     useEffect(() => {
-        MemberService.getAll().then(data => {
-            setMembers(data);
+        MemberService.getAll().then(members => {
+            dispatch(setMembers(members));
+            setFilteredMembers(members);
         });
     }, []);
-
     const handleDelete = async (id) => {
         if (await MemberService.delete(id)) {
-            setMembers(members.filter(member => member.id !== id));
+            const updatedMembers = await MemberService.getAll();
+
+            dispatch(setMembers(updatedMembers));
         }
     };
 
     return (
         <div className="container">
-            <div className="addButton">
-                <Link to="/member" className="addLink">
-                    Add Member
-                </Link>
-                <Link to="/statistics" className="addLink">
-                    Statistic
-                </Link>
-            </div>
             <div className="membersContainer">
-                <h1>Members</h1>
+                <div className="topBar">
+                    <h1>Members</h1>
+                    <input
+                        type="text"
+                        className="filterInput"
+                        onChange={(e) => filter(e.target.value)}
+                        placeholder="Filter members"
+                    />
+                </div>
                 <ul className="membersList">
-                    {members?.map(member => (
+                    {filteredMembers?.map(member => (
                         <li key={member.id} className="memberItem">
                             <span>{member.firstName} {member.lastName}</span>
                             <div className="memberActions">

@@ -12,10 +12,24 @@ const CovidDetailService = {
       console.error('CovidDetailService :: getCovidDetailsByMemberId :: ERROR :: ', error);
     }
   },
-
-  update: async (id, covidDetails) => {
+  create: async (covidDetail) => {
     try {
-      const response = await fetch(`${baseUrl}/${id}`, {
+      const response = await fetch(`${baseUrl}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(covidDetail),
+      });
+      if (!response.ok) {
+        throw new Error('Failed to create COVID detail');
+      }
+      return response.ok;
+    } catch (error) {
+      console.error('CovidDetailService :: create :: ERROR :: ', error);
+    }
+  },
+  update: async (covidDetails) => {
+    try {
+      const response = await fetch(`${baseUrl}/${covidDetails.id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(covidDetails),
@@ -26,6 +40,18 @@ const CovidDetailService = {
       return response.ok;
     } catch (error) {
       console.error('CovidDetailService :: update :: ERROR :: ', error);
+    }
+  },
+
+  delete: async (id) => {
+    try {
+      const response = await fetch(`${baseUrl}/${id}`, {
+        method: 'DELETE',
+      });
+      return response.ok;
+    }
+    catch (e) {
+      console.error('CovidDetailService :: delete :: ERROR :: ', error);
     }
   },
 

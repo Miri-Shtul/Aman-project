@@ -17,6 +17,8 @@ namespace CovidTracking.Repositories.Entities
         public string Phone { get; set; }
         public string MobilePhone { get; set; }
         public string ImagePath { get; set; }
+        public virtual ICollection<CovidDetail>? CovidDetails { get; set; }
+        public virtual ICollection<Vaccination>? Vaccinations { get; set; }
     }
 
 }

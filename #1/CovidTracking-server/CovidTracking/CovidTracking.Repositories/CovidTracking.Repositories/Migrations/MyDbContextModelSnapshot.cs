@@ -114,7 +114,7 @@ namespace CovidTracking.Repositories.Migrations
             modelBuilder.Entity("CovidTracking.Repositories.Entities.CovidDetail", b =>
                 {
                     b.HasOne("CovidTracking.Repositories.Entities.Member", "Member")
-                        .WithMany()
+                        .WithMany("CovidDetails")
                         .HasForeignKey("MemberId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -155,12 +155,19 @@ namespace CovidTracking.Repositories.Migrations
             modelBuilder.Entity("CovidTracking.Repositories.Entities.Vaccination", b =>
                 {
                     b.HasOne("CovidTracking.Repositories.Entities.Member", "Member")
-                        .WithMany()
+                        .WithMany("Vaccinations")
                         .HasForeignKey("MemberId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Member");
+                });
+
+            modelBuilder.Entity("CovidTracking.Repositories.Entities.Member", b =>
+                {
+                    b.Navigation("CovidDetails");
+
+                    b.Navigation("Vaccinations");
                 });
 #pragma warning restore 612, 618
         }
