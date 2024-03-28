@@ -3,11 +3,13 @@ import { useNavigate, useParams } from 'react-router-dom';
 import MemberService from '../../services/memberService';
 import VaccinationService from '../../services/vaccinationService';
 import CovidDetailService from '../../services/covidDetailService';
+import { isValidIsraeliId } from './validation';
 import './MemberForm.css';
 
 function MemberForm() {
     const [deletedVaccinations, setDeletedVaccinations] = useState([]);
     const [deletedCovidDetails, setDeletedCovidDetails] = useState([]);
+    const [validationErrors, setValidationErrors] = useState({});
     const [member, setMember] = useState({
         firstName: '',
         lastName: '',
@@ -32,8 +34,24 @@ function MemberForm() {
     const handleDateConversion = (dateString) => {
         return dateString ? new Date(dateString).toISOString().substring(0, 10) : null;
     };
+    const validateForm = () => {
+        const errors = {};
+        if (!member.firstName.trim()) errors.firstName = 'First name is required';
+        if (!member.lastName.trim()) errors.lastName = 'Last name is required';
+        if (!member.identityNumber.trim() || !isValidIsraeliId(member.identityNumber.trim())) {
+            errors.identityNumber = 'Identity number must be a valid Israeli ID';
+        }
+        if (!member.phone.trim()) errors.phone = 'Phone is required';
+        if (!member.mobilePhone.trim()) errors.mobilePhone = 'Mobile phone is required';
+        if (!member.dateOfBirth) errors.dateOfBirth = 'Date of birth is required';
+        if (!member.address.city.trim()) errors.cityity = 'City is required';
+        if (!member.address.street.trim()) errors.street = 'Street is required';
+        if (!member.address.buildingNumber.trim()) errors.buildingNumber = 'Building number is required';
+        if (!member.imageFile) errors.imageFile = 'Image is required';
 
-
+        setValidationErrors(errors);
+        return Object.keys(errors).length === 0;
+    };
     useEffect(() => {
         if (memberId) {
             MemberService.getById(memberId).then(async data => {
@@ -57,14 +75,11 @@ function MemberForm() {
                         })),
                     });
                 }
-
-
             });
         }
     }, [memberId]);
 
     const handleChange = (e) => {
-        console.log('--->memberrr   ', member);
         const { name, value } = e.target;
         setMember(prevMember => ({ ...prevMember, [name]: value }));
     };
@@ -134,6 +149,11 @@ function MemberForm() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        const isValid = validateForm();
+
+        if (!isValid) {
+            return;
+        }
         const formData = new FormData();
         Object.keys(member).forEach(key => {
             if (key === 'imageFile' && member[key]) {
@@ -156,6 +176,7 @@ function MemberForm() {
             }
             if (response.ok) {
                 let savedMemberId = memberId;
+
                 if (response.status !== 204) {
                     const savedMember = await response.json();
                     savedMemberId = savedMember.id;
@@ -182,7 +203,12 @@ function MemberForm() {
                 ...deleteVaccinationPromises, ...deleteCovidDetailPromises]);
 
                 navigate('/');
-            } else {
+            } else if (response.status === 400) {
+                const errors = await response.json();
+
+                setValidationErrors(errors?.errors);
+            }
+            else {
                 console.error('Submit failed:', response);
             }
         } catch (error) {
@@ -195,40 +221,48 @@ function MemberForm() {
             <form onSubmit={handleSubmit}>
                 <div>
                     <label>First Name:</label>
-                    <input type="text" name="firstName" value={member.firstName} onChange={handleChange
-                    } />
+                    <input type="text" name="firstName" value={member.firstName} onChange={handleChange} />
+                    {validationErrors?.firstName && <div className="error">{validationErrors?.firstName}</div>}
                 </div>
                 <div>
                     <label>Last Name:</label>
                     <input type="text" name="lastName" value={member.lastName} onChange={handleChange} />
+                    {validationErrors?.lastName && <div className="error">{validationErrors?.lastName}</div>}
                 </div>
                 <div>
                     <label>Identity Number:</label>
                     <input type="text" name="identityNumber" value={member.identityNumber} onChange={handleChange} />
+                    {validationErrors?.identityNumber && <div className="error">{validationErrors?.identityNumber}</div>}
                 </div>
                 <div>
                     <label>Phone:</label>
                     <input type="text" name="phone" value={member.phone} onChange={handleChange} />
+                    {validationErrors.phone && <div className="error">{validationErrors.phone}</div>}
                 </div>
                 <div>
                     <label>Mobile Phone:</label>
                     <input type="text" name="mobilePhone" value={member.mobilePhone} onChange={handleChange} />
+                    {validationErrors?.mobilePhone && <div className="error">{validationErrors?.mobilePhone}</div>}
                 </div>
                 <div>
                     <label>Date of Birth:</label>
                     <input type="date" name="dateOfBirth" value={member.dateOfBirth || ''} onChange={handleChange} />
+                    {validationErrors?.dateOfBirth && <div className="error">{validationErrors?.dateOfBirth}</div>}
                 </div>
                 <div>
                     <label>City:</label>
                     <input type="text" name="city" value={member.address.city} onChange={handleAddressChange} />
+                    {validationErrors?.city && <div className="error">{validationErrors?.city}</div>}
                 </div>
                 <div>
                     <label>Street:</label>
                     <input type="text" name="street" value={member.address.street} onChange={handleAddressChange} />
+                    {validationErrors?.street && <div className="error">{validationErrors?.street}</div>}
                 </div>
                 <div>
                     <label>Building Number:</label>
                     <input type="text" name="buildingNumber" value={member.address.buildingNumber} onChange={handleAddressChange} />
+                    {validationErrors?.buildingNumber && <div className="error">{validationErrors?.buildingNumber}</div>}
                 </div>
                 <div>
                     <label>Photo:</label>
@@ -244,6 +278,7 @@ function MemberForm() {
                         <div>No image available</div>
                     )}
                     <input type="file" onChange={handleFileChange} />
+                    {validationErrors?.imageFile && <div className="error">{validationErrors?.imageFile}</div>}
                 </div>
                 {member.vaccinations.map((vaccination, index) => (
                     <div key={index}>

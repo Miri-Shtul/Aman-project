@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CovidTracking.WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28d11564ae54a048fe4e87988499fa1bfc8e2ba4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2ce90f3713dd429b7fea66b2b73310097e16167")]
 [assembly: System.Reflection.AssemblyProductAttribute("CovidTracking.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CovidTracking.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

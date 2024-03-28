@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import MemberList from './components/MemberList/MemberList';
 import MemberForm from './components/MemberForm/MemberForm';
-import MemberDetail from './components/MemberDetails/MemberDetail';
 import Statistics from './components/Statistics/Statistics';
 import Nav from 'react-bootstrap/Nav';
 
